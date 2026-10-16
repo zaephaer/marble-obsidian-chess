@@ -1,0 +1,7 @@
+services:
+  chess:
+    build: .
+    container_name: marble-obsidian-chess
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8087:80"
